@@ -1,0 +1,40 @@
+{
+  "name": "AICTE Research Agent",
+  "description": "AI-powered Research Agent that autonomously searches academic literature, summarises papers, manages citations, generates reports, and proposes research hypotheses — powered by IBM Granite on IBM watsonx.ai.",
+  "version": "1.0.0",
+  "domain": "Education / Research",
+  "problem_statement": "AICTE IBM University Engagement — Problem Statement #1: Research Agent",
+  "author": "shivansh21awasthi",
+  "github": "https://github.com/shivansh21awasthi/AICTE---Research-Agent",
+  "tech_stack": {
+    "llm": "ibm/granite-4-h-small",
+    "embeddings": "ibm/granite-embedding-278m-multilingual",
+    "platform": "IBM watsonx.ai",
+    "cloud": "IBM Cloud Lite",
+    "web_ui": "Streamlit",
+    "cli": "Python Click + Rich",
+    "search": ["arXiv", "Semantic Scholar"],
+    "output_formats": ["Markdown", "PDF", "BibTeX", "APA", "JSON"]
+  },
+  "capabilities": [
+    "Literature search (arXiv + Semantic Scholar)",
+    "Paper summarisation using IBM Granite",
+    "Multi-paper literature synthesis",
+    "Research hypothesis generation",
+    "Citation management (BibTeX / APA / JSON)",
+    "Markdown + PDF report generation",
+    "Research paper section drafting"
+  ],
+  "run_local": {
+    "install": "pip install -r requirements.txt",
+    "cli": "python main.py \"your research topic\"",
+    "web": "streamlit run app_streamlit.py"
+  },
+  "environment_variables": {
+    "IBM_CLOUD_API_KEY": "required",
+    "WATSONX_PROJECT_ID": "required",
+    "WATSONX_URL": "https://us-south.ml.cloud.ibm.com",
+    "GRANITE_MODEL_ID": "ibm/granite-4-h-small",
+    "GRANITE_EMBEDDING_MODEL_ID": "ibm/granite-embedding-278m-multilingual"
+  }
+}
