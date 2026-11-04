@@ -1,0 +1,16 @@
+ibm-watsonx-ai>=1.1.2
+ibm-cloud-sdk-core>=3.20.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+arxiv>=2.1.0
+scholarly>=1.7.11
+beautifulsoup4>=4.12.3
+lxml>=5.2.1
+pypdf2>=3.0.1
+pdfminer.six>=20221105
+reportlab>=4.2.0
+pandas>=2.2.0
+numpy>=1.26.4
+colorama>=0.4.6
+rich>=13.7.1
+click>=8.1.7
